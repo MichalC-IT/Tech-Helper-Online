@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Helper Online - Remote IT Support</title>
+    <style>
+        /* Dark professional color scheme */
+        body {
+            background-color: #000000;
+            color: #cccccc;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #111111;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: #cccccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover, nav ul li.active a {
+            color: #007bff;
+        }
+        .hero {
+            background-color: #000000;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        .hero p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .services {
+            padding: 50px 20px;
+            background-color: #111111;
+        }
+        .services h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #ffffff;
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .service-card {
+            background-color: #222222;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+        }
+        .service-card h3 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .service-card p {
+            margin-bottom: 15px;
+        }
+        .service-card a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .why-me {
+            padding: 50px 20px;
+            background-color: #000000;
+        }
+        .why-me h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #ffffff;
+        }
+        .why-me ul {
+            max-width: 800px;
+            margin: 0 auto;
+            list-style: none;
+            padding: 0;
+        }
+        .why-me li {
+            margin-bottom: 10px;
+        }
+        .contact {
+            padding: 50px 20px;
+            background-color: #111111;
+        }
+        .contact h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #ffffff;
+        }
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #222222;
+            border: 1px solid #444444;
+            color: #cccccc;
+            border-radius: 4px;
+        }
+        .contact button {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #000000;
+            padding: 20px;
+            text-align: center;
+            color: #777777;
+        }
+        footer .logo {
+            margin-bottom: 10px;
+        }
+        footer nav ul {
+            justify-content: center;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">TECH HELPER ONLINE</div>
+            <ul>
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="#services">What I Do</a></li>
+                <li><a href="#why-me">Why Me?</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Remote IT Support – Fast, Clear, and Effective</h1>
+        <p>I'm Michal Cnota, a dedicated IT professional specializing in practical computer assistance. I provide remote support for troubleshooting, system configuration, software issues, website development, and script automation. All services are delivered online via the internet, no travel required. Whether you're an individual needing help with your PC or a small business, I offer tailored solutions to get your tech running smoothly.</p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>What I Do</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>🔧 Computer Repair and Configuration</h3>
+                <p>Troubleshoot issues, fix system errors, optimize performance, and assist with gaming FPS.</p>
+                <a href="service-computer-repair.html">Learn More</a>
+            </div>
+            <div class="service-card">
+                <h3>🐧 Linux Password Recovery / Reset</h3>
+                <p>Change passwords without data loss, restore access using recovery mode and terminal.</p>
+                <a href="service-linux-password-recovery.html">Learn More</a>
+            </div>
+            <div class="service-card">
+                <h3>🌐 Website Development</h3>
+                <p>Create modern websites with HTML/CSS/JS, focused on aesthetics and performance.</p>
+                <a href="service-website-development.html">Learn More</a>
+            </div>
+            <div class="service-card">
+                <h3>⚙️ Script Development</h3>
+                <p>Automate tasks with Bash, Python, and more, tailored to your needs.</p>
+                <a href="service-custom-script.html">Learn More</a>
+            </div>
+            <div class="service-card">
+                <h3>🖥️ PC Selection and Assembly Assistance</h3>
+                <p>Help select components, build PCs, and match setups to your budget remotely.</p>
+                <a href="service-pc-build.html">Learn More</a>
+            </div>
+            <div class="service-card">
+                <h3>💿 System Installation and Reinstallation</h3>
+                <p>Install/reinstall Windows or Linux, configure, and optimize post-install.</p>
+                <a href="service-os-install.html">Learn More</a>	
+            </div>
+			<div class="service-card">
+                <h3>🛠️ Other Thing</h3>
+                <p>I am at your disposal – tell me what you need.</p>
+                <a href="Other Thing.html">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-me" class="why-me">
+        <h2>Why Me?</h2>
+        <ul>
+            <li>Broad technical skills in IT, from hardware to software.</li>
+            <li>Logical, straightforward problem-solving approach.</li>
+            <li>Honest service with no unrealistic promises.</li>
+            <li>Continuous learning to stay updated with tech.</li>
+            <li>Focus on real solutions, no fluff.</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <form id="contact-form">
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Title" required>
+        <textarea name="message" placeholder="Message" rows="5" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+    <p>Email: michalcnota.uslugi@gmail.com</p>
+    <p>Phone: 574 385 019</p>
+</section>
+
+<script>
+const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault(); // zapobiega domyślnej wysyłce formularza
+
+    const data = {
+        email: form.email.value,
+        subject: form.subject.value,
+        message: form.message.value
+    };
+
+    try {
+        const response = await fetch('https://formspree.io/f/meeeqkkw', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        });
+
+        if (response.ok) {
+            alert('Message sent successfully!');
+            form.reset();
+        } else {
+            alert('Failed to send message.');
+        }
+    } catch (error) {
+        alert('Error sending message.');
+        console.error(error);
+    }
+});
+</script>
+
+    <footer>
+        <div class="logo">TECH HELPER ONLINE</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">What I Do</a></li>
+                <li><a href="#why-me">Why Me?</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <p>Contact: michalcnota.uslugi.@gmail.com | 574 385 019</p>
+        <p>Website by Michal Cnota</p>
+    </footer>
+</body>
+</html>
